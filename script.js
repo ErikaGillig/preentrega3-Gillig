@@ -3,7 +3,7 @@ const form = document.querySelector('form');
 const newTaskInput = document.querySelector('#new-task');
 const taskList = document.querySelector('#task-list');
 
-// Capturar tareas de Local Storage o crear un array vacío
+// Capturar tareas de Local Storage o crear 1 array vacío
 let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
 // Renderizar la lista de tareas
