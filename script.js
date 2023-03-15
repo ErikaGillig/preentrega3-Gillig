@@ -1,4 +1,4 @@
-// Tener los elementos del DOM
+// capturar elementos desde DOM
 const form = document.querySelector('form');
 const newTaskInput = document.querySelector('#new-task');
 const taskList = document.querySelector('#task-list');
@@ -29,7 +29,7 @@ function renderTasks() {
   }
 }
 
-// Añadir nueva tarea
+// Añadir tarea nueva
 function addTask(event) {
   event.preventDefault();
   const taskText = newTaskInput.value.trim();
@@ -41,7 +41,7 @@ function addTask(event) {
   }
 }
 
-// Borrar 1 tarea
+// Borrar Tarea
 function deleteTask(index) {
   tasks.splice(index, 1);
   localStorage.setItem('tasks', JSON.stringify(tasks));
